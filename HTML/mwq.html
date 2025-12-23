@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>简历模板</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Microsoft YaHei", sans-serif;
+        }
+        .resume {
+            display: flex;
+            width: 900px;
+            margin: 20px auto;
+            border: 1px solid #e0e0e0;
+            box-shadow: 0 0 5px rgba(0,0,0,0.1);
+        }
+        /* 左侧栏样式 */
+        .left-col {
+            width: 30%;
+            background: #f5f5f5;
+            padding: 30px 20px;
+        }
+        .avatar {
+            width: 120px;
+            height: 120px;
+            border: 1px solid #ccc;
+            margin: 0 auto 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #e0e0e0;
+            color: #666;
+        }
+        .name {
+            font-size: 24px;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        .job {
+            text-align: center;
+            color: #666;
+            margin-bottom: 30px;
+        }
+        .info-card, .skills-card {
+            margin-bottom: 30px;
+        }
+        .card-title {
+            background: #0078d7;
+            color: white;
+            padding: 8px 10px;
+            font-size: 18px;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+        }
+        .skills-card .card-title {
+            background: #f79646;
+        }
+        .card-title span {
+            margin-left: 5px;
+        }
+        .info-list {
+            list-style: none;
+            padding-left: 10px;
+        }
+        .info-list li {
+            margin-bottom: 10px;
+            color: #333;
+        }
+        .skill-item {
+            margin-bottom: 15px;
+        }
+        .skill-name {
+            margin-bottom: 5px;
+            color: #333;
+        }
+        .skill-bar {
+            height: 8px;
+            background: #e0e0e0;
+            border-radius: 4px;
+            overflow: hidden;
+        }
+        .skill-progress {
+            height: 100%;
+            background: #f79646;
+        }
+        /* 右侧栏样式 */
+        .right-col {
+            width: 70%;
+            padding: 30px 20px;
+        }
+        .section {
+            margin-bottom: 30px;
+        }
+        .section-title {
+            font-size: 20px;
+            color: #2d8b47;
+            border-bottom: 2px solid #2d8b47;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+        }
+        .section-title span {
+            margin-left: 5px;
+        }
+        .edu-info, .work-info {
+            margin-bottom: 20px;
+        }
+        .edu-school, .work-company {
+            font-weight: bold;
+            font-size: 16px;
+            margin-bottom: 5px;
+        }
+        .edu-detail, .work-time {
+            color: #666;
+            margin-bottom: 10px;
+        }
+        .honor-list, .work-list {
+            list-style: disc;
+            padding-left: 20px;
+            margin-bottom: 10px;
+        }
+        .honor-list li, .work-list li {
+            margin-bottom: 5px;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+    <div class="resume">
+        <!-- 左侧个人信息与技能栏 -->
+        <div class="left-col">
+            <div class="avatar">头像区域</div>
+            <div class="name">OfficePLUS</div>
+            <div class="job">产品运营/应届</div>
+
+            <div class="info-card">
+                <div class="card-title">
+                    <span>个人信息 Info</span>
+                </div>
+                <ul class="info-list">
+                    <li>邮箱: officeplus@microsoft.com</li>
+                    <li>籍贯: 北京</li>
+                    <li>微博: @微软OfficePLUS</li>
+                    <li>QQ: 3093242906</li>
+                    <li>地址: 北京市海淀区中关村东路1号清华科技园D座15层</li>
+                    <li>英语: CET6 540</li>
+                </ul>
+            </div>
+
+            <div class="skills-card">
+                <div class="card-title">
+                    <span>个人技能 Skills</span>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-name">WORD</div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 90%;"></div>
+                    </div>
+          </div>
+                 <div class="skill-item">
+                     <div class="skill-name">EXCEL</div>
+                     <div class="skill-bar">
+                         <div class="skill-progress" style="width: 80%;"></div>
+                     </div>
+                 </div>
+                 <div class="skill-item">
+                     <div class="skill-name">POWERPOINT</div>
+                     <div class="skill-bar">
+                         <div class="skill-progress" style="width: 85%;"></div>
+                     </div>
+                 </div>
+                 <div class="skill-item">
+                     <div class="skill-name">PHOTOSHOP</div>
+                     <div class="skill-bar">
+                         <div class="skill-progress" style="width: 70%;"></div>
+                     </div>
+                 </div>
+                 <div class="skill-item">
+                     <div class="skill-name">SPSS</div>
+                     <div class="skill-bar">
+                         <div class="skill-progress" style="width: 60%;"></div>
+                     </div>
+                 </div>
+             </div>
+         </div>
+         <!-- 右侧教育背景与实践经验栏 -->
+         <div class="right-col">
+             <div class="section">
+                 <div class="section-title">
+                     <span>教育背景 Education Background</span>
+                 </div>
+                 <div class="edu-info">
+                     <div class="edu-school">北京OfficePLUS大学 商学院 市场营销专业</div>
+                     <div class="edu-detail">本科 GPA3.6/4.0 班级排名 3/32 2012.09-2016.07</div>
+                     <div class="edu-detail"><strong>所获荣誉</strong></div>
+                     <ul class="honor-list">
+                         <li>北京市优秀毕业生，北京市三好学生，校一等优秀奖学金，校“优秀团员”，校学生会“先进个人”</li>
+                     </ul>
+                 </div>
+             </div>
+             <div class="section">
+                 <div class="section-title">
+                     <span>实践经验 Work Experience</span>
+                 </div>
+                 <div class="work-info">
+                     <div class="work-company">北京微软在线Office PLUS项目组</div>
+                     <div class="work-time">2015.10-2016.04 运营实习生</div>
+                     <ul class="work-list">
+                         <li>负责网站后台管理、产品更新维护、数据追踪和分析，根据分析结果和市场反馈调整网站内容结构</li>
+                         <li>负责微博运营，结合时事热点推送优质模板，保持品牌活跃度，运营期间每日平均涨粉300+，粉丝总数增长150%</li>
+                         <li>负责与设计师、合作单位沟通联系，积累了大量业内人脉</li>
+                     </ul>
+                 </div>
+                 <div class="work-info">
+                     <div class="work-company">北京Office贸易有限公司</div>
+                     <div class="work-time">2015.03-2016.09 运营实习生</div>
+                     <ul class="work-list">
+                         <li>协助运营总监管理1家天猫店、2家淘宝C店日常运营工作</li>
+                         <li>负责店铺基础管理、活动策划、渠道分销、资源拓展等工作的沟通协调</li>
+                         <li>负责每周六团队例会会议纪要，针对客服每周问题进行归纳总结</li>
+                         <li>成功将店铺DRS从低于行业水平提高到高出行业水平20%</li>
+                         <li>协助会员经营高级经理发展店铺会员，以淘宝后院为平台成功举行了多次活动，并对会员QQ群日常的维护</li>
+                     </ul>
+                 </div>
+                 <div class="work-info">
+                     <div class="work-company">北京Office大学BBS</div>
+                     <div class="work-time">2013.10-2015.04 版主</div>
+                     <ul class="work-list">
+                         <li>论坛版主，坚持定期发布基于网络的文档、规章</li>
+                         <li>将4版从日人均流量提升至1000+，成为最有影响力的版面</li>
+                         <li>网站内容方面与sohu合作，并定期与同内容网站进行交流，资源共享，提升人气</li>
+                         <li>先后选拔几十名人才，按其特长分配工作并协调他们合作</li>
+                     </ul>
+                 </div>
+                 <div class="work-info"><div class="work-company">北京Office大学学生会</div>
+                     <div class="work-time">2011.10-2014.04 副主席</div>
+                     <ul class="work-list">
+                         <li>负责办公室和宣传部两个部门，先后策划过元旦晚会、运动会等大型活动</li>
+                         <li>连续两年获得学生会先进个人称号</li>
+                         <li>所负责的暑期支教项目获得北京市“优秀暑期实践”奖</li>
+                     </ul>
+                 </div>
+             </div>
+         </div>
+     </div>
+ </body>
+ </html>

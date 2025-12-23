@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            border: 2px black solid;
+            width: 600px;
+            padding: 15px;
+            margin: 0;
+        }
+        h1{
+            font-size: 28px;
+            margin: 0 0 15px 0;
+        }
+        meter::-webkit-meter-suboptimum-value{
+            background-color: greenyellow;
+            border-radius: 4px;
+        }
+        meter::-webkit-meter-even-less-good-value{
+            background-color: greenyellow;
+            border-radius: 4px;
+        }
+        meter::-webkit-meter-optimum-value{
+            background-color: yellow;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>朋友</h1>
+        <p>这些年一个人 风也过雨也走 有过泪有过错 还记得坚持甚么 真爱过才会懂会寂寞会回首 终有梦终有你在心中……</p>
+       <details>
+        <summary>查看评分结果</summary>
+        <ul>
+            <li>
+                那一天：<meter value="6"min="0"max="10" high="8" low="4" optimum="10"></meter>6分
+                </li>
+                <li>
+                向日葵：<meter value="8"min="0"max="10" hight="8" low="4" optimum="10"></meter>8分
+                    </li>
+                    <li>
+                紫罗兰：<meter value="4" min="0"max="10" low="4" high="8" optimum="10"></meter>4分
+                        </li>
+                
+            </ul>
+        </details>
+    </div>
+</body>
+</html>

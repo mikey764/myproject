@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人简历</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Microsoft YaHei', sans-serif;
+        }
+        
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+        }
+        
+        .resume {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #4a6fa5;
+        }
+        
+        .name {
+            font-size: 32px;
+            color: #2c3e50;
+            margin-bottom: 5px;
+        }
+        
+        .title {
+            font-size: 20px;
+            color: #4a6fa5;
+            margin-bottom: 15px;
+        }
+        
+        .contact {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-top: 10px;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        .section {
+            margin-bottom: 25px;
+        }
+        
+        .section-title {
+            font-size: 22px;
+            color: #2c3e50;
+            border-left: 4px solid #4a6fa5;
+            padding-left: 10px;
+            margin-bottom: 15px;
+        }
+        
+        .item {
+            margin-bottom: 15px;
+        }
+        
+        .item-title {
+            font-weight: bold;
+            font-size: 18px;
+            color: #333;
+        }
+        
+        .item-subtitle {
+            color: #666;
+            font-style: italic;
+            margin: 5px 0;
+        }
+        
+        .item-date {
+            color: #888;
+            font-size: 14px;
+        }
+        
+        ul {
+            padding-left: 20px;
+            margin-top: 5px;
+        }
+        
+        li {
+            margin-bottom: 5px;
+        }
+        
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 10px;
+        }
+        
+        .skill-tag {
+            background: #e8f4f8;
+            padding: 5px 12px;
+            border-radius: 15px;
+            font-size: 14px;
+        }
+        
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+            color: #777;
+            font-size: 14px;
+        }
+        
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+            
+            .resume {
+                box-shadow: none;
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="resume">
+        <header class="header">
+            <h1 class="name">张明</h1>
+            <h2 class="title">前端开发工程师</h2>
+            <div class="contact">
+                <div class="contact-item">📧 zhangming@example.com</div>
+                <div class="contact-item">📱 138-1234-5678</div>
+                <div class="contact-item">📍 北京市</div>
+            </div>
+        </header>
+        
+        <section class="section">
+            <h3 class="section-title">个人简介</h3>
+            <p>5年前端开发经验，精通HTML/CSS/JavaScript，熟悉React、Vue等主流框架。热爱技术，注重代码质量，具备良好的团队协作能力。</p>
+        </section>
+        
+        <section class="section">
+            <h3 class="section-title">工作经历</h3>
+            <div class="item">
+                <div class="item-title">字节跳动 · 前端工程师</div>
+                <div class="item-date">2021年6月 - 至今</div>
+                <ul>
+                    <li>负责抖音Web端功能开发与优化</li>
+                    <li>参与组件库设计与开发</li>
+                    <li>性能优化，提升页面加载速度</li>
+                </ul>
+            </div>
+            <div class="item">
+                <div class="item-title">阿里巴巴 · 前端开发</div>
+                <div class="item-date">2019年7月 - 2021年5月</div>
+                <ul>
+                    <li>参与淘宝商家后台系统开发</li>
+                    <li>实现响应式页面设计</li>
+                    <li>开发可复用UI组件</li>
+                </ul>
+            </div>
+        </section>
+        
+        <section class="section">
+            <h3 class="section-title">教育背景</h3>
+            <div class="item">
+                <div class="item-title">清华大学</div>
+                <div class="item-subtitle">计算机科学与技术 · 硕士</div>
+                <div class="item-date">2018 - 2021</div>
+            </div>
+            <div class="item">
+                <div class="item-title">北京大学</div>
+                <div class="item-subtitle">软件工程 · 学士</div>
+                <div class="item-date">2014 - 2018</div>
+            </div>
+        </section>
+        
+        <section class="section">
+            <h3 class="section-title">技能专长</h3>
+            <div class="skills">
+                <span class="skill-tag">HTML/CSS</span>
+                <span class="skill-tag">JavaScript</span>
+                <span class="skill-tag">React</span>
+                <span class="skill-tag">Vue.js</span>
+                <span class="skill-tag">Node.js</span>
+                <span class="skill-tag">TypeScript</span>
+                <span class="skill-tag">Git</span>
+                <span class="skill-tag">Webpack</span>
+            </div>
+        </section>
+        
+        <section class="section">
+            <h3 class="section-title">项目经验</h3>
+            <div class="item">
+                <div class="item-title">电商管理系统</div>
+                <p>基于React和Node.js的全栈项目，包含商品管理、订单处理等功能。</p>
+            </div>
+            <div class="item">
+                <div class="item-title">在线教育平台</div>
+                <p>Vue.js开发的在线学习平台，支持视频播放、实时聊天等功能。</p>
+            </div>
+        </section>
+        
+        <footer class="footer">
+            <p>最后更新: 2023年10月</p>
+        </footer>
+    </div>
+</body>
+</html>

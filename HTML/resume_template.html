@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人简历 - 模板</title>
+    <style>
+        /* 基于常见简历图片模板的样式 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'SimSun', '宋体', serif;
+            color: #000;
+            background: #fff;
+            line-height: 1.5;
+            font-size: 14px;
+        }
+        
+        .resume-container {
+            width: 210mm; /* A4纸宽度 */
+            min-height: 297mm; /* A4纸高度 */
+            margin: 0 auto;
+            padding: 20mm 15mm;
+            background: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        
+        /* 简历头部 */
+        .resume-header {
+            text-align: center;
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid #000;
+        }
+        
+        .name {
+            font-size: 28px;
+            font-weight: bold;
+            letter-spacing: 4px;
+            margin-bottom: 5px;
+        }
+        
+        .position {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            font-size: 14px;
+        }
+        
+        /* 两栏布局 */
+        .two-column {
+            display: flex;
+            gap: 30px;
+            margin-top: 20px;
+        }
+        
+        .left-column {
+            flex: 1;
+        }
+        
+        .right-column {
+            flex: 2;
+        }
+        
+        /* 通用部分样式 */
+        .section {
+            margin-bottom: 20px;
+        }
+        
+        .section-title {
+            font-size: 18px;
+            font-weight: bold;
+            border-left: 4px solid #000;
+            padding-left: 10px;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+        
+        .item {
+            margin-bottom: 15px;
+        }
+        
+        .item-header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 5px;
+        }
+        
+        .item-title {
+            font-weight: bold;
+            font-size: 16px;
+        }
+        
+        .item-date {
+            font-style: italic;
+            color: #666;
+        }
+        
+        .item-subtitle {
+            color: #444;
+            margin-bottom: 5px;
+        }
+        
+        ul {
+            padding-left: 20px;
+        }
+        
+        li {
+            margin-bottom: 3px;
+        }
+        
+        /* 技能部分 */
+        .skill-item {
+            margin-bottom: 10px;
+        }
+        
+        .skill-name {
+            display: inline-block;
+            width: 100px;
+        }
+        
+        .skill-level {
+            display: inline-block;
+            height: 8px;
+            background: #ddd;
+            border-radius: 4px;
+            overflow: hidden;
+        }
+        
+        .skill-level-bar {
+            height: 100%;
+            background: #333;
+        }
+        
+        /* 打印样式 */
+        @media print {
+            body {
+                background: white;
+                margin: 0;
+                padding: 0;
+            }
+            
+            .resume-container {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 15mm 10mm;
+                box-shadow: none;
+            }
+            
+            .no-print {
+                display: none;
+            }
+        }
+        
+        /* 装饰线 */
+        .divider {
+            height: 1px;
+            background: #ccc;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="resume-container">
+        <header class="resume-header">
+            <h1 class="name">王小明</h1>
+            <div class="position">软件工程师</div>
+            <div class="contact-info">
+                <span>📧 wangxiaoming@email.com</span>
+                <span>📱 138-0000-0000</span>
+                <span>📍 北京市海淀区</span>
+                <span>🔗 github.com/wangxm</span>
+            </div>
+        </header>
+        
+        <div class="two-column">
+            <div class="left-column">
+                <section class="section">
+                    <h3 class="section-title">教育背景</h3>
+                    <div class="item">
+                        <div class="item-header">
+                            <div class="item-title">清华大学</div>
+                            <div class="item-date">2018-2022</div>
+                        </div>
+                        <div class="item-subtitle">计算机科学与技术 · 本科</div>
+                        <p>GPA: 3.8/4.0</p>
+                    </div>
+                    <div class="item">
+                        <div class="item-header">
+                            <div class="item-title">北京大学附属中学</div>
+                            <div class="item-date">2015-2018</div>
+                        </div>
+                    </div>
+                </section>
+                
+                <section class="section">
+                    <h3 class="section-title">技能专长</h3>
+                    <div class="skill-item">
+                        <span class="skill-name">HTML/CSS</span>
+                        <div class="skill-level">
+                            <div class="skill-level-bar" style="width: 90%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">JavaScript</span>
+                        <div class="skill-level">
+                            <div class="skill-level-bar" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Python</span>
+                        <div class="skill-level">
+                            <div class="skill-level-bar" style="width: 80%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Java</span>
+                        <div class="skill-level">
+                            <div class="skill-level-bar" style="width: 75%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">React</span>
+                        <div class="skill-level">
+                            <div class="skill-level-bar" style="width: 85%"></div>
+                        </div>
+                    </div>
+                </section>
+                
+                <section class="section">
+                    <h3 class="section-title">语言能力</h3>
+                    <ul>
+                        <li>中文 (母语)</li>
+                        <li>英语 (CET-6)</li>
+                        <li>日语 (N3)</li>
+                    </ul>
+                </section>
+                
+                <section class="section">
+                    <h3 class="section-title">证书</h3>
+                    <ul>
+                        <li>软件设计师证书</li>
+                        <li>英语六级证书</li>
+                        <li>日语能力测试N3</li>
+                    </ul>
+                </section>
+            </div>
+            
+            <div class="right-column">
+                <section class="section">
+                    <h3 class="section-title">工作经历</h3>
+                    <div class="item">
+                        <div class="item-header">
+                            <div class="item-title">字节跳动 · 前端工程师</div>
+                            <div class="item-date">2022.07-至今</div>
+                        </div>
+                        <ul>
+                            <li>负责抖音Web端核心功能开发</li>
+                            <li>参与组件库设计与实现</li>
+                            <li>优化页面性能，提升用户体验</li>
+                            <li>与产品、设计团队紧密合作</li>
+                        </ul>
+                    </div>
+                    <div class="item">
+                        <div class="item-header">
+                            <div class="item-title">阿里巴巴 · 实习工程师</div>
+                            <div class="item-date">2021.07-2022.06</div>
+                        </div>
+                        <ul>
+                            <li>参与淘宝商家后台开发</li>
+                            <li>学习并应用前端开发最佳实践</li>
+                            <li>完成多个功能模块开发</li>
+                        </ul>
+                    </div>
+                </section>
+                
+                <section class="section">
+                    <h3 class="section-title">项目经验</h3>
+                    <div class="item">
+                        <div class="item-header">
+                            <div class="item-title">在线教育平台</div>
+                            <div class="item-date">2023.03-2023.08</div>
+                        </div>
+                        <p>基于React和Node.js开发的在线学习平台，支持视频播放、实时聊天、作业提交等功能。</p>
+                        <p><strong>技术栈:</strong> React, Node.js, MongoDB, WebSocket</p>
+                    </div>
+                    <div class="item">
+                        <div class="item-header">
+                            <div class="item-title">电商管理系统</div>
+                            <div class="item-date">2022.10-2023.02</div>
+                        </div>
+                        <p>全栈电商后台管理系统，包含商品管理、订单处理、用户权限等功能。</p>
+                        <p><strong>技术栈:</strong> Vue.js, Express, MySQL</p>
+                    </div>
+                </section>
+                
+                <section class="section">
+                    <h3 class="section-title">自我评价</h3>
+                    <p>具备扎实的计算机基础知识和丰富的项目开发经验。热爱编程，善于学习新技术，具有良好的团队协作能力和沟通能力。对待工作认真负责，注重细节，追求代码质量和用户体验。</p>
+                </section>
+            </div>
+        </div>
+        
+        <div class="divider"></div>
+        
+        <footer class="no-print" style="text-align: center; margin-top: 20px; color: #666; font-size: 12px;">
+            <p>最后更新: 2023年10月 | 打印快捷键: Ctrl+P</p>
+        </footer>
+    </div>
+    
+    <script>
+        // 简单的打印提示
+        document.addEventListener('keydown', function(e) {
+            if (e.ctrlKey && e.key === 'p') {
+                e.preventDefault();
+                window.print();
+            }
+        });
+        
+        // 技能条动画
+        window.addEventListener('load', function() {
+            const skillBars = document.querySelectorAll('.skill-level-bar');
+            skillBars.forEach(bar => {
+                const width = bar.style.width;
+                bar.style.width = '0';
+                setTimeout(() => {
+                    bar.style.transition = 'width 1s ease-in-out';
+                    bar.style.width = width;
+                }, 300);
+            });
+        });
+    </script>
+</body>
+</html>
